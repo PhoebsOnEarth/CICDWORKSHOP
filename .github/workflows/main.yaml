@@ -20,4 +20,5 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "🧑🏻‍🚀 this is branch name ${{ github.ref_name }}"
+      - run: echo "🛰️ this is branch type ${{ github.ref_type }}"
       
