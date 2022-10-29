@@ -12,6 +12,8 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - run: echo "🧑🏻‍🚀 this is branch name ${{ github.ref_name }}"
+      - name: checkout out
+        uses: actions/checkout@v3
       - run: echo "🛰️ this is branch type ${{ github.ref_type }}"
       - name: Deploy Vercel
         uses: amondnet/vercel-action@v25.1.0
